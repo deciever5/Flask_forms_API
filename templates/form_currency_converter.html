@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title class="centered">Kalkulator walut</title>
+    <link rel="stylesheet" type = "text/css" href= "{{ url_for('static',filename='/styles/centered.css') }}">
+</head>
+<body>
+<br>
+<h1 class = "centered">Kalkulator walut</h1>
+
+<form method="post" action="">
+ <div class="centered"><label for="currencies">Wybierz walutę:</label>
+<select name="curencies" id="currencies">
+    {% for currency in currencies %}
+  <option value={{currency}}>{{currency}}</option>
+    {% endfor %}
+</select>
+</div>
+<br>
+<div class="centered">
+<label for="ammount">Kwota PLN:</label>
+<input type="text" name="ammount" id="ammount" >
+    <br><br><br>
+    </div>
+<div class="submit">
+    <br>
+    <input type="submit" name="Przelicz" value="Przelicz">
+    </div>
+
+
+</form>
+</body>
+</html>
