@@ -1,19 +1,5 @@
 .centered
- {
- margin: auto;
-  width: 50%;
- text-align: center;
- border: 2px solid #eee;
- padding: 10px;
- width: 400px;
- box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
- border-radius:10px;
-
-}
-
-.submit
 {
-
  margin: auto;
   width: 50%;
  text-align: center;
@@ -24,3 +10,17 @@
  border-radius:10px;
 
 }
+
+head {
+  background-image: url('background.jpg');
+}
+.results
+{
+ margin: auto;
+  width: 50%;
+ text-align: center;
+ border: 2px solid #eee;
+ padding: 10px;
+ width: 400px;
+ box-shadow: rgba(34,139,34, 0.4) 5px 5px, rgba(34,139,34, 0.3) 10px 10px, rgba(34,139,34, 0.2) 15px 15px, rgba(34,139,34, 0.1) 20px 20px, rgba(34,139,34, 0.05) 25px 25px;
+ }
