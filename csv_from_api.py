@@ -1,6 +1,7 @@
 import requests
 import csv
 
+
 def create_csv():
     response = requests.get("http://api.nbp.pl/api/exchangerates/tables/C?format=json")
     data = response.json()
@@ -10,5 +11,3 @@ def create_csv():
         writer.writeheader()
         for line in data[0].get('rates'):
             writer.writerow(line)
-
-

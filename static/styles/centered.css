@@ -8,12 +8,8 @@
  width: 400px;
  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
  border-radius:10px;
-
 }
 
-head {
-  background-image: url('background.jpg');
-}
 .results
 {
  margin: auto;
