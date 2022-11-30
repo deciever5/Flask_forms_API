@@ -23,8 +23,8 @@ def form_view():
             amount_pln = 0
         else:
             amount_pln = float(amount_pln)
-       for row in currencies_data:
-           if row.get("currency") == currency:
+        for row in currencies_data:
+            if row.get("currency") == currency:
                short = row.get("code")
                bid = float(row.get("bid"))
                result = amount_pln / bid
