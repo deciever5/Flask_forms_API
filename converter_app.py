@@ -23,15 +23,12 @@ def form_view():
             amount_pln = 0
         else:
             amount_pln = float(amount_pln)
-        with open("test.csv", newline="") as f:
-            currencies_data = csv.DictReader(f, delimiter=';')
-
-            for row in currencies_data:
-                if row.get("currency") == currency:
-                    short = row.get("code")
-                    bid = float(row.get("bid"))
-                    result = amount_pln / bid
-                    content = f'{amount_pln} PLN = {result:.2f} {short}'
+       for row in currencies_data:
+           if row.get("currency") == currency:
+               short = row.get("code")
+               bid = float(row.get("bid"))
+               result = amount_pln / bid
+               content = f'{amount_pln} PLN = {result:.2f} {short}'
 
     return render_template('/form_currency_converter.html', currencies=currencies, content=content)
 
